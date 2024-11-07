@@ -7,6 +7,6 @@ Anyone who wants to contribute can feel free to submit a PR.
 
 ## Functions
 
-- [ ] Checkout sessions
+### Checkout sessions
 - [ ] Modes:
 - - [X] Subscription
