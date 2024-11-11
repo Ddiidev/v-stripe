@@ -1,10 +1,10 @@
-module main
+module tests
 
 import stripe
 import checkout
 import checkout.entities
 
-fn main() {
+fn flow_test() {
 	instance := stripe.Stripe{
 		secret_key: 'secret-key'
 	}
@@ -14,9 +14,9 @@ fn main() {
 	result := checkout_stripe.checkout_session(entities.CheckoutSession{
 		line_items:  [
 			entities.LineItem{
-				price: 'price_1QHAqTLZ5gTFc3B28M7DQzbj'
+				price:    'price_1QHAqTLZ5gTFc3B28M7DQzbj'
 				quantity: 1
-			}
+			},
 		]
 		mode:        entities.ModeCheckout.subscription
 		success_url: 'https://www.tabnews.com.br/Andreldev/build-public-o-dicionario-do-seu-bebe'
